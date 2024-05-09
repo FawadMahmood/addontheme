@@ -1,0 +1,44 @@
+{
+  "default": {
+    "backgroundColor": "purple",
+    "hoverColor": "purple",
+    "activeColor": "#004080",
+    "textColor": "#fff"
+  },
+  "red": {
+    "backgroundColor": "red",
+    "hoverColor": "#cc0000",
+    "activeColor": "#990000",
+    "textColor": "#fff"
+  },
+  "green": {
+    "backgroundColor": "#009900",
+    "hoverColor": "#009900",
+    "activeColor": "#006600",
+    "textColor": "#fff"
+  },
+  "blue": {
+    "backgroundColor": "#0000ff",
+    "hoverColor": "#0000cc",
+    "activeColor": "#000099",
+    "textColor": "#fff"
+  },
+  "purple": {
+    "backgroundColor": "#800080",
+    "hoverColor": "#660066",
+    "activeColor": "#4c004c",
+    "textColor": "#fff"
+  },
+  "yellow": {
+    "backgroundColor": "#ffff00",
+    "hoverColor": "#cccc00s",
+    "activeColor": "sadasdasdas",
+    "textColor": "#fff"
+  },
+  "orange": {
+    "backgroundColor": "#ff8000",
+    "hoverColor": "#cc6600",
+    "activeColor": "#994d00",
+    "textColor": "#fff"
+  }
+}
