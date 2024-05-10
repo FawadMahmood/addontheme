@@ -4,16 +4,6 @@ import {  } from '@storybook/react';
 import { ThemeProvider  } from 'styled-components';
 import theme from '../src/components/theme.json';
 
-// Define the shape of your context state
-interface ContextState {
-  fetchTheme: (newTheme: string) => void;
-}
-
-// Create the context with default values
-export const MyThemeContext = React.createContext<ContextState>({
-  fetchTheme: () => {},
-});
-
 const preview: Preview = {
   decorators: [(Story,context)=>{
     const [currentTheme, setCurrentTheme] = useState(null);
@@ -45,9 +35,7 @@ const preview: Preview = {
     
      return(
       <ThemeProvider theme={currentTheme ?? theme.default}>
-        <MyThemeContext.Provider value={{ fetchTheme }}>
           <Story />
-        </MyThemeContext.Provider>
       </ThemeProvider>
       )}],
 
@@ -125,7 +113,7 @@ export const globalTypes = {
       items: Object.keys(theme), 
       dynamicTitle: true,
     }
-  }
+  },
 }
 
 

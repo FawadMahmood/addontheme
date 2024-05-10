@@ -1,44 +1,51 @@
 {
   "default": {
-    "backgroundColor": "purple",
+    "backgroundColor": "red",
     "hoverColor": "purple",
     "activeColor": "#004080",
-    "textColor": "#fff"
+    "textColor": "#fff",
+    "isBoolean": true
   },
   "red": {
-    "backgroundColor": "red",
+    "backgroundColor": "gray",
     "hoverColor": "#cc0000",
     "activeColor": "#990000",
-    "textColor": "#fff"
+    "textColor": "#fff",
+    "isBoolean": true
   },
   "green": {
     "backgroundColor": "#009900",
     "hoverColor": "#009900",
     "activeColor": "#006600",
-    "textColor": "#fff"
+    "textColor": "#fff",
+    "isBoolean": true
   },
   "blue": {
     "backgroundColor": "#0000ff",
     "hoverColor": "#0000cc",
     "activeColor": "#000099",
-    "textColor": "#fff"
+    "textColor": "#fff",
+    "isBoolean": true
   },
   "purple": {
     "backgroundColor": "#800080",
     "hoverColor": "#660066",
     "activeColor": "#4c004c",
-    "textColor": "#fff"
+    "textColor": "#fff",
+    "isBoolean": true
   },
   "yellow": {
     "backgroundColor": "#ffff00",
     "hoverColor": "#cccc00s",
     "activeColor": "sadasdasdas",
-    "textColor": "#fff"
+    "textColor": "#fff",
+    "isBoolean": true
   },
   "orange": {
-    "backgroundColor": "#ff8000",
+    "backgroundColor": "blue",
     "hoverColor": "#cc6600",
     "activeColor": "#994d00",
-    "textColor": "#fff"
+    "textColor": "#fff",
+    "isBoolean": true
   }
 }

@@ -21,25 +21,26 @@ addons.register(ADDON_ID, () => {
   });
 
   // Register the panel
-  addons.add(PANEL_ID, {
-    type: types.PANEL,
-    title: "My addon",
-    match: ({ viewMode }) => viewMode === "story",
-    render: Panel,
-  });
+  // addons.add(PANEL_ID, {
+  //   type: types.PANEL,
+  //   title: "My addon",
+  //   match: ({ viewMode }) => viewMode === "story",
+  //   render: Panel,
+  // });
   addons.add("my-panel-addon/panel", {
     type: types.PANEL,
     title: "Theme customizer",
     match: ({ viewMode }) => viewMode === "story",
     render: MyPanel,
-    
+    paramKey: "layout",
   });
+
   // Register the tab
-  addons.add(TAB_ID, {
-    type: types.TAB,
-    title: "My addon",
-    render: Tab,
-  });
+  // addons.add(TAB_ID, {
+  //   type: types.TAB,
+  //   title: "My addon",
+  //   render: Tab,
+  // });
 });
 
 

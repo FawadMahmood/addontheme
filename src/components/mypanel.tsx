@@ -1,5 +1,5 @@
 import React, { useCallback, useEffect, useState } from "react";
-import { useGlobals } from "@storybook/manager-api";
+import { useGlobals, useParameter } from "@storybook/manager-api";
 import { AddonPanel } from "@storybook/components";
 import defaultThemes from "../components/theme.json"
 import { JsonEditor } from 'json-edit-react';
@@ -28,10 +28,13 @@ const OptionList = ({ options }) => {
   );
 };
 export const MyPanel: React.FC<PanelProps> = (props) => {
+  const parameterValue = useParameter('myAddon', null);
+  const myString = parameterValue ? parameterValue?.myString : '';
+  console.log('MyPanelprops', myString);
   // https://storybook.js.org/docs/react/addons/addons-api#useaddonstate
   const [themes, setThemes] = useState(defaultThemes);
-  const[{theme}, updateGlobals]= useGlobals();
-
+  const[{theme, styleKey}, updateGlobals]= useGlobals();
+  console.log('styleKey', styleKey);
   const fetchTheme = useCallback(async () => {
     try {
       const response = await fetch(`http://localhost:3001/${theme}`, {
