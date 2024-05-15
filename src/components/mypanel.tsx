@@ -8,7 +8,7 @@ interface PanelProps {
   active: boolean;
 }
 
-const OptionList = ({ options }) => {
+const OptionList = ({ options }: any) => {
   return (
     <div>
       <div  >
@@ -109,10 +109,10 @@ export const MyPanel: React.FC<PanelProps> = (props) => {
     </div>
     <div>
     <button >Save</button>
-    <JsonEditor
-      data={ themes[theme]? themes[theme]:themes['default'] }
-      onUpdate={ handleUpdate}
-   />
+      <JsonEditor
+        data={ themes[theme]? themes[theme]:themes['default'] }
+        onUpdate={ handleUpdate}
+      />
     </div>
     </AddonPanel>
   );

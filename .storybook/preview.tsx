@@ -18,24 +18,23 @@ const preview: Preview = {
          
         });
         if (response.ok) {
-          // console.log(`Theme "${theme}" response body`,await response.json());
-           setCurrentTheme(await response.json())
-          
+          const theme = await response.json();
+          setCurrentTheme(theme);
         } else {
           console.error('Failed to update theme');
         }
       } catch (error) {
         console.error('Error updating theme:', error);
       }
-    }, []);
+    }, [context.globals.theme]);
 
     useEffect(() => {
       fetchTheme();
-    }, []);
+    }, [context.globals.theme]);
     
      return(
       <ThemeProvider theme={currentTheme ?? theme.default}>
-          <Story />
+        <Story />
       </ThemeProvider>
       )}],
 

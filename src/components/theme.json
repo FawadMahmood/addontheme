@@ -1,20 +1,20 @@
 {
   "default": {
-    "backgroundColor": "red",
-    "hoverColor": "purple",
+    "backgroundColor": "#007bff",
+    "hoverColor": "#0056b3",
     "activeColor": "#004080",
     "textColor": "#fff",
     "isBoolean": true
   },
   "red": {
-    "backgroundColor": "gray",
+    "backgroundColor": "#ff0000",
     "hoverColor": "#cc0000",
     "activeColor": "#990000",
     "textColor": "#fff",
     "isBoolean": true
   },
   "green": {
-    "backgroundColor": "#009900",
+    "backgroundColor": "#00cc00",
     "hoverColor": "#009900",
     "activeColor": "#006600",
     "textColor": "#fff",
@@ -42,7 +42,7 @@
     "isBoolean": true
   },
   "orange": {
-    "backgroundColor": "blue",
+    "backgroundColor": "#ff8000",
     "hoverColor": "#cc6600",
     "activeColor": "#994d00",
     "textColor": "#fff",
