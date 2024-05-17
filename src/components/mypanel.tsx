@@ -103,12 +103,10 @@ export const MyPanel: React.FC<PanelProps> = (props) => {
   };
   return (
     <AddonPanel {...props}>
-     <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+     {/* <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
       <OptionList options={options}/>
-      {/* <div>Selected Theme: {globals.theme}</div> */}
-    </div>
+    </div> */}
     <div>
-    <button >Save</button>
       <JsonEditor
         data={ themes[theme]? themes[theme]:themes['default'] }
         onUpdate={ handleUpdate}
